@@ -1,9 +1,14 @@
-body, html {
+body,
+html {
   height: 100%;
   margin: 0;
 }
 
 .container {
+  display: grid;
+  gap: 40px;
+  grid-template-columns: 500px 1500px;
+  grid-template-rows: 150px 150px 600px 150px;
   text-align: center;
   height: 100%;
   padding: 16px;
@@ -20,10 +25,14 @@ body, html {
 }
 
 .header {
+  grid-column: 1/3;
+  grid-row: 1/2;
   background-color: #FFDE22;
 }
 
 .sidebar {
+  grid-column: 1/2;
+  grid-row: 2/4;
   background-color: #FF7755;
 }
 
@@ -43,5 +52,7 @@ body, html {
 }
 
 .footer {
+  grid-column: 1/3;
+  grid-row: 4/5;
   background-color: #393f4d;
 }
